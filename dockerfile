@@ -1,8 +1,8 @@
 FROM node:8
-WORKDIR /home/webaluno/project
+WORKDIR /home/quasar/project
 
-COPY . /home/webaluno/project
-# Install vue first and then quasar
+COPY . /home/quasar/project
+
 RUN npm install -g vue-cli
 RUN npm i -g quasar-cli
 
