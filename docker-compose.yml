@@ -1,13 +1,13 @@
 version: '3'
 services:
-  webaluno:
-    container_name: webaluno
+  project:
+    container_name: project
     build: .
     command: quasar dev
     volumes: 
-      - .:/home/webaluno/project
+      - .:/home/quasar/project
     ports: 
       - "8080:8080"
     environment:
-      - NODE_ENV='teste'
+      - NODE_ENV=${NODE_ENV}
     
